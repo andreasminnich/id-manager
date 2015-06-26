@@ -7,9 +7,19 @@ module.exports = function(grunt) {
           keepalive: true
         }
       }
+    },
+
+    appcache: {
+      app: {
+        dest: 'identity-manager.appcache',
+        cache: {
+          patterns: ['app.js', '*.html', '*.css']
+        },
+        network: '*'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
-
+  grunt.loadNpmTasks('grunt-appcache');
 }

@@ -1,3 +1,7 @@
+navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+  console.log('ServiceWorker registration succeeded!');
+})
+
 document.getElementById('add-identity').addEventListener('click', function() {
   var name = document.getElementById('identity-name').value;
   var city = document.getElementById('identity-city').value;
@@ -8,7 +12,7 @@ document.getElementById('add-identity').addEventListener('click', function() {
   saveIdentities(identities);
 
   renderTable(identities);
-});
+})
 
 function loadIdentities() {
   if (localStorage.identities) {
