@@ -1,0 +1,21 @@
+body {
+  background-color: #eee;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#identities label, button {
+  margin: 20px;
+}
+#identities table {
+  margin-top: 20px;
+}
+
+#identities td {
+  padding: 10px;
+}

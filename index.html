@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Id Manager</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Identity Manager</h1>
+      <section id="identities">
+        <label for="identity-name">Name:</label>
+        <input id="identity-name" type="text" />
+        <label for="identity-city">City:</label>
+        <select id="identity-city">
+          <option>New York</option>
+          <option>Tokyo</option>
+          <option>Moscow</option>
+          <option>Cairo</option>
+          <option>Mumbai</optiono>
+          <option>Sao Paulo</option>
+        </select>
+        <button id="add-identity">Add Identity</button>
+      </section>
+
+      <table>
+        <thead>
+          <tr><th>Name</th><th>City</th></tr>
+        </thead>
+        <tbody id="identity-list">
+
+        </tbody>
+      </table>
+    </main>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
